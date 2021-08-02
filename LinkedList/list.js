@@ -18,6 +18,8 @@ export class LinkedList {
     this.size++;
   }
 
+  // Insert a node at last index
+
   addElementLast(element) {
     let node = new Node(element);
     let current;
@@ -33,6 +35,8 @@ export class LinkedList {
       this.size++;
     }
   }
+
+  // Insert a node at specific index
 
   insertAtIndex(data, index) {
     if (index > 0 && index > this.size) {
@@ -58,6 +62,8 @@ export class LinkedList {
     }
   }
 
+  // Get a node from middle of the list
+
   getMiddleOfLinkedList() {
     let current = this.head;
     let index = Math.ceil(this.size / 2);
@@ -74,20 +80,22 @@ export class LinkedList {
     return result;
   }
 
+  // Get a node from specific index
+
   getElementAtIndex(index) {
     let current = this.head;
     let count = 0;
-
+    let result;
     while (current) {
       if (count == index) {
-        console.log('Index Of element', current.head);
+        result = current.head;
       }
       count++;
       current = current.next;
     }
-    return null;
+    return result;
   }
-
+  // Reverse a linked list
   reverseLinkedList() {
     let current = this.head,
       temp,
