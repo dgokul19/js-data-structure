@@ -1,5 +1,5 @@
 import { LinkedList } from './LinkedList/list';
-import { reverseString } from './String/string';
+import { reverseString, removeRepeatedCharacter } from './String/string';
 
 // Executing Linked List logics
 
@@ -11,7 +11,12 @@ list.addElement(4);
 list.addElement(5);
 // console.log('reversing a linked list', list.reverseLinkedList());
 
-
 // Executing a String logics
-  // Reverse a given string
-console.log(reverseString('Gokulan'));
+// Reverse a given string
+// console.log(reverseString('Gokulan'));
+
+// Recursively remove all adjacent duplicates
+
+// console.log(removeRepeatedCharacter('geeksforgeek'));
+
+console.log(removeRepeatedCharacter('acaaabbbacdddd'));
