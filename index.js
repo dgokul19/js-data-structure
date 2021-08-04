@@ -17,6 +17,6 @@ list.addElement(5);
 
 // Recursively remove all adjacent duplicates
 
-// console.log(removeRepeatedCharacter('geeksforgeek'));
+console.log(removeRepeatedCharacter('geeksforgeek'));
 
 console.log(removeRepeatedCharacter('acaaabbbacdddd'));
